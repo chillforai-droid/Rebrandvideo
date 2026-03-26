@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Video Clean & Rebrand</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚀 AI Video Clean & Rebrand (No API)</h1>
+
+<input type="file" id="videoInput" accept="video/*">
+<input type="file" id="logoInput" accept="image/*">
+
+<select id="position">
+<option value="auto">Auto Detect</option>
+<option value="bottom-right">Bottom Right</option>
+<option value="top-right">Top Right</option>
+<option value="bottom-left">Bottom Left</option>
+<option value="top-left">Top Left</option>
+</select>
+
+<button onclick="start()">Process</button>
+
+<p id="status"></p>
+<video id="preview" controls></video>
+
+<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.6/dist/ffmpeg.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
